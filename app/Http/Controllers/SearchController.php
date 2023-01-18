@@ -24,9 +24,7 @@ class SearchController extends Controller {
     public function search($name = null) {
 
         if ($name != "") {
-            $users = User::with(['address','company'])->where('name', 'like', '%' . $name . '%')->select('id', 'name', 'username','email','phone','website')->get();
-            
-             
+            $users = User::where('name', 'like', '%' . $name . '%')->select('id', 'name', 'username','email','phone','website')->with(['address','company','followers'])->has('followers')->get();
             
         } else {
             $users = User::with('address','company')->select('id', 'name', 'username','email','phone','website')->load(['followables'])->get();

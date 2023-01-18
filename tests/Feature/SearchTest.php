@@ -15,7 +15,7 @@ class SearchTest extends TestCase {
      * @return void
      */
     public function test_search_followers_by_name() {
-        $response = $this->json('GET', '/api/search-followers/ab');
+        $response = $this->json('GET', '/api/search-followers/ma');
         $response->assertStatus(200);
         $response->assertJsonStructure(
                 [
