@@ -49,5 +49,4 @@ No | URL | Type |  Parameters
 
 - Create 'users' table and GET API to return users.
 - Create backend logic including database architecture and API endpoints to follow and unfollow users. Users should be able to follow other users. 
-- Create an API endpoint to be able to search followers by name. This API is for the list of followers screen, and the user can filter followers by name. 
-# user-follow-unfollow-app
+- Create an API endpoint to be able to search followers by name. This API is for the list of followers screen, and the user can filter followers by name.  
