@@ -6,6 +6,8 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 use App\Models\User;
+use App\Models\Address;
+use App\Models\Company;
 use Log;
 
 class FollowUnfollowTest extends TestCase {
@@ -18,7 +20,11 @@ class FollowUnfollowTest extends TestCase {
     public function test_api_user_can_follow_by_id() {
 
         $user1 = User::factory()->create();
+        Address::factory()->count(1)->create(['user_id'=>$user1->id]); 
+        Company::factory()->count(1)->create(['user_id'=>$user1->id]); 
         $user2 = User::factory()->create();
+        Address::factory()->count(1)->create(['user_id'=>$user2->id]); 
+        Company::factory()->count(1)->create(['user_id'=>$user2->id]); 
         $payload = [
             'followed_id' => $user2->id,
         ];
@@ -37,7 +43,11 @@ class FollowUnfollowTest extends TestCase {
     public function test_api_user_unfollow_by_id() {
 
         $user1 = User::factory()->create();
+        Address::factory()->count(1)->create(['user_id'=>$user1->id]); 
+        Company::factory()->count(1)->create(['user_id'=>$user1->id]); 
         $user2 = User::factory()->create();
+        Address::factory()->count(1)->create(['user_id'=>$user2->id]); 
+        Company::factory()->count(1)->create(['user_id'=>$user2->id]); 
         $user1->follow($user2);
         $payload = [
             'followed_id' => $user2->id,
@@ -55,7 +65,11 @@ class FollowUnfollowTest extends TestCase {
      */
     public function test_check_is_following() {
         $user1 = User::factory()->create();
+        Address::factory()->count(1)->create(['user_id'=>$user1->id]); 
+        Company::factory()->count(1)->create(['user_id'=>$user1->id]); 
         $user2 = User::factory()->create();
+        Address::factory()->count(1)->create(['user_id'=>$user2->id]); 
+        Company::factory()->count(1)->create(['user_id'=>$user2->id]); 
         $user1->follow($user2);
         $this->assertTrue($user1->isFollowing($user2));
     }
@@ -67,7 +81,11 @@ class FollowUnfollowTest extends TestCase {
 
     public function test_get_one_non_exist_user_try_for_follow() {
         $user1 = User::factory()->create();
+        Address::factory()->count(1)->create(['user_id'=>$user1->id]); 
+        Company::factory()->count(1)->create(['user_id'=>$user1->id]); 
         $user2 = User::factory()->create();
+        Address::factory()->count(1)->create(['user_id'=>$user2->id]); 
+        Company::factory()->count(1)->create(['user_id'=>$user2->id]); 
         $payload = [
             'followed_id' => $user2->id,
         ];
@@ -83,7 +101,11 @@ class FollowUnfollowTest extends TestCase {
 
     public function test_get_one_non_exist_user_try_for_unfollow() {
         $user1 = User::factory()->create();
+        Address::factory()->count(1)->create(['user_id'=>$user1->id]); 
+        Company::factory()->count(1)->create(['user_id'=>$user1->id]); 
         $user2 = User::factory()->create();
+        Address::factory()->count(1)->create(['user_id'=>$user2->id]); 
+        Company::factory()->count(1)->create(['user_id'=>$user2->id]); 
         $user1->follow($user2);
         $payload = [
             'followed_id' => $user2->id,

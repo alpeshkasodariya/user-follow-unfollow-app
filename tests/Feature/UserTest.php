@@ -15,7 +15,10 @@ class UserTest extends TestCase {
      * @return void
      */
     public function test_get_all_users() {
-        $user = User::factory()->create();
+        $user1 = User::factory()->create();
+        Address::factory()->count(1)->create(['user_id'=>$user1->id]); 
+        Company::factory()->count(1)->create(['user_id'=>$user1->id]); 
+        
         $response = $this->json('GET', '/api/users');
         $response->assertStatus(200);
         $response->assertJsonStructure(
@@ -40,8 +43,10 @@ class UserTest extends TestCase {
      * @return void
      */
     public function test_user_by_id() {
-        $user = User::factory()->create();
-        $response = $this->json('GET', '/api/users/'.$user->id);
+        $user1 = User::factory()->create();
+        Address::factory()->count(1)->create(['user_id'=>$user1->id]); 
+        Company::factory()->count(1)->create(['user_id'=>$user1->id]); 
+        $response = $this->json('GET', '/api/users/'.$user1->id);
         $response->assertStatus(200);
         $response->assertJsonStructure(
                 [ 
@@ -62,8 +67,7 @@ class UserTest extends TestCase {
       expected return 404 with message No query results for model [App\\User].
      */
 
-    public function test_get_one_non_exist_user() {
-        $user = User::factory()->create();
+    public function test_get_one_non_exist_user() { 
         $response = $this->json('GET', '/api/users/0');
         $response->assertStatus(200);
     }
