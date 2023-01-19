@@ -3,25 +3,25 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/database/migrations/2023_01_16_000000_create_users_table.php</file>
             <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/app/Models/User.php</file>
+            <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/database/factories/AddressFactory.php</file>
             <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/README.md</file>
-            <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/app/Models/Address.php</file>
+            <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/tests/Unit/ExampleTest.php</file>
             <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/app/Http/Controllers/UserController.php</file>
-            <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/tests/Feature/SearchTest.php</file>
+            <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/database/migrations/2023_01_17_000000_create_company_table.php</file>
             <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/database/factories/UserFactory.php</file>
-            <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/routes/web.php</file>
+            <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/app/Models/Company.php</file>
+            <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/tests/Feature/SearchTest.php</file>
+            <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/database/factories/CompanyFactory.php</file>
             <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/database/seeders/DatabaseSeeder.php</file>
-            <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/storage/logs/laravel.log</file>
-            <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/routes/channels.php</file>
-            <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/routes/api.php</file>
+            <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/resources/views/welcome.blade.php</file>
             <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/app/Http/Controllers/SearchController.php</file>
             <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/app/Http/Controllers/FolllowUnfollowController.php</file>
+            <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/tests/TestCase.php</file>
+            <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/tests/CreatesApplication.php</file>
             <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/tests/Feature/UserTest.php</file>
-            <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/database/factories/UsersMetaFactory.php</file>
             <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/tests/Feature/FollowUnfollowTest.php</file>
-            <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/database/migrations/2014_10_12_000000_create_users_table.php</file>
-            <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/database/seeders/UsersTableSeeder.php</file>
-            <file>file:/Volumes/AlpeshJetDrive/C-Card/MAMP/user-follow-unfollow-app/database/migrations/2014_10_12_100000_create_password_resets_table.php</file>
         </group>
     </open-files>
 </project-private>
