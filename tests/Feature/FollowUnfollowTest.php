@@ -8,7 +8,7 @@ use Tests\TestCase;
 use App\Models\User;
 use App\Models\Address;
 use App\Models\Company;
-use Log;
+
 
 class FollowUnfollowTest extends TestCase {
 
